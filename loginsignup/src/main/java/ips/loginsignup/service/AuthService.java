@@ -62,7 +62,9 @@ public class AuthService {
 
         return new LoginResponseDto(
                 token,
-                user.getId()
+                user.getId(),
+                user.getRoles()
+
         );
 
     }
